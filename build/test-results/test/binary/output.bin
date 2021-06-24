@@ -1,0 +1,5 @@
+;id=1, name='Jeff Bezos', salary=100000.0, startDate=null}
+:id=2, name='Bill Gates', salary=20000.0, startDate=null}
+?id=3, name='Mark Zuckerberg', salary=30000.0, startDate=null}
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSl=false
+HConnection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@6b3e3a

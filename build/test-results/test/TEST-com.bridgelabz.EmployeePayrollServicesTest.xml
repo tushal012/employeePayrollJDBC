@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.EmployeePayrollServicesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-06-24T07:04:36" hostname="DESKTOP-T1B6V6K" time="4.404">
+  <properties/>
+  <testcase name="given3EmployeeWhenWrittenToFileShouldMatchEmployeeEntries" classname="com.bridgelabz.EmployeePayrollServicesTest" time="0.404"/>
+  <testcase name="givenEmployeePayrollInDB_WhenRetrieved_ShouldMatchEmployeeCount" classname="com.bridgelabz.EmployeePayrollServicesTest" time="3.999"/>
+  <system-out><![CDATA[id=1, name='Jeff Bezos', salary=100000.0, startDate=null}
+id=2, name='Bill Gates', salary=20000.0, startDate=null}
+id=3, name='Mark Zuckerberg', salary=30000.0, startDate=null}
+Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSl=false
+Connection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@6b3e3a
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

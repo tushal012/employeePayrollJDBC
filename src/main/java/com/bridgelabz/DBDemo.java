@@ -5,7 +5,7 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 import java.util.Enumeration;
 
-public class EmployeePayrollServices {
+public class DBDemo {
     public static void main(String[] args) {
         String jdbcURL = "jdbc:mysql://Localhost:3306/payroll_service?useSSL=false";
         String userName = "root";
