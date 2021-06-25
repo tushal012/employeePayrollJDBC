@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.EmployeePayrollServicesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-06-24T14:02:25" hostname="DESKTOP-T1B6V6K" time="8.007">
+<testsuite name="com.bridgelabz.EmployeePayrollServicesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-25T07:09:37" hostname="DESKTOP-T1B6V6K" time="5.232">
   <properties/>
-  <testcase name="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDatabase" classname="com.bridgelabz.EmployeePayrollServicesTest" time="7.676"/>
-  <testcase name="given3EmployeeWhenWrittenToFileShouldMatchEmployeeEntries" classname="com.bridgelabz.EmployeePayrollServicesTest" time="0.228"/>
-  <testcase name="givenEmployeePayrollInDB_WhenRetrieved_ShouldMatchEmployeeCount" classname="com.bridgelabz.EmployeePayrollServicesTest" time="0.101"/>
+  <testcase name="givenDateRange_WhenRetrievedEmployee_ShouldReturnEmpCount" classname="com.bridgelabz.EmployeePayrollServicesTest" time="5.232"/>
   <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSl=false
-Connection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@497ae155
+Connection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@1eab7526
 Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSl=false
-Connection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@2fd6ff5
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSl=false
-Connection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@7770ba57
-id=1, name='Jeff Bezos', salary=100000.0, startDate=null}
-id=2, name='Bill Gates', salary=20000.0, startDate=null}
-id=3, name='Mark Zuckerberg', salary=30000.0, startDate=null}
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSl=false
-Connection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@3ca33a7f
+Connection is successful!!!!!! com.mysql.cj.jdbc.ConnectionImpl@6f3ecc15
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
