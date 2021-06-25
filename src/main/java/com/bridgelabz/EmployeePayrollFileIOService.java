@@ -37,7 +37,7 @@ public class EmployeePayrollFileIOService {
         }
     }
 
-    public void readDataFromFile(){
+    public void readData(){
         List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
         try {
             Files.lines(new File(PAYROLL_FILE_NAME).toPath()).map(line -> line.trim())
@@ -56,4 +56,13 @@ public class EmployeePayrollFileIOService {
         }
         return entries;
     }
+
+    public void readDataFromFile() {
+        try {
+            Files.lines(new File(PAYROLL_FILE_NAME).toPath()).map(line -> line.trim()).forEach(line -> System.out.println(line));
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
 }
+
