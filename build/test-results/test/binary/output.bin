@@ -1,32 +1,30 @@
-QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@42705d0b
+@Processing Thread: Test workerConnection to database with Id:1
+oProcessing Thread: Test worker Id: 1Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@5922656d
 #Employee Being Added : Jeff Bezos
-QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@546aa4d6
+@Processing Thread: Test workerConnection to database with Id:2
+oProcessing Thread: Test worker Id: 2Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@14ee5cd4
 Employee Added: Jeff Bezos
 #Employee Being Added : Bill Gates
-QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@598a385e
+@Processing Thread: Test workerConnection to database with Id:3
+nProcessing Thread: Test worker Id: 3Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@c4fe046
 Employee Added: Bill Gates
 (Employee Being Added : Mark Zuckerberg
-QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@289aac28
+@Processing Thread: Test workerConnection to database with Id:4
+oProcessing Thread: Test worker Id: 4Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@103cd77f
 !Employee Added: Mark Zuckerberg
 Employee Being Added : Sunder
-QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@734b6dc0
+@Processing Thread: Test workerConnection to database with Id:5
+oProcessing Thread: Test worker Id: 5Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@2c1e529a
 Employee Added: Sunder
 Employee Being Added : Mukesh
-QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@1d7724e9
+@Processing Thread: Test workerConnection to database with Id:6
+oProcessing Thread: Test worker Id: 6Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@4959d2c7
 Employee Added: Mukesh
 Employee Being Added : Anil
-QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@7494a61c
+@Processing Thread: Test workerConnection to database with Id:7
+nProcessing Thread: Test worker Id: 7Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@963a03e
 Employee Added: Anil
-š
-[EmployeePayrollData{id=2, name='Charlie', salary=1000000.0}, EmployeePayrollData{id=3, name='Terisa', salary=3000000.0}, EmployeePayrollData{id=4, name='Bill', salary=3000000.0}, EmployeePayrollData{id=35, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=36, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=37, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=38, name='Sunder', salary=400000.0}, EmployeePayrollData{id=39, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=40, name='Anil', salary=600000.0}, EmployeePayrollData{id=41, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=42, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=43, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=44, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=45, name='Anil', salary=600000.0}, EmployeePayrollData{id=46, name='Sunder', salary=400000.0}, EmployeePayrollData{id=47, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=48, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=49, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=50, name='Sunder', salary=400000.0}, EmployeePayrollData{id=51, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=52, name='Anil', salary=600000.0}]
-'Duration without Thread: PT1.5041575S
-š
-[EmployeePayrollData{id=2, name='Charlie', salary=1000000.0}, EmployeePayrollData{id=3, name='Terisa', salary=3000000.0}, EmployeePayrollData{id=4, name='Bill', salary=3000000.0}, EmployeePayrollData{id=35, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=36, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=37, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=38, name='Sunder', salary=400000.0}, EmployeePayrollData{id=39, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=40, name='Anil', salary=600000.0}, EmployeePayrollData{id=41, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=42, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=43, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=44, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=45, name='Anil', salary=600000.0}, EmployeePayrollData{id=46, name='Sunder', salary=400000.0}, EmployeePayrollData{id=47, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=48, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=49, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=50, name='Sunder', salary=400000.0}, EmployeePayrollData{id=51, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=52, name='Anil', salary=600000.0}]
-$Duration with Thread: PT0.0050176S
+©[EmployeePayrollData{id=2, name='Charlie', salary=1000000.0}, EmployeePayrollData{id=3, name='Terisa', salary=3000000.0}, EmployeePayrollData{id=4, name='Bill', salary=3000000.0}, EmployeePayrollData{id=35, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=36, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=37, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=38, name='Sunder', salary=400000.0}, EmployeePayrollData{id=39, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=40, name='Anil', salary=600000.0}, EmployeePayrollData{id=104, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=105, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=106, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=107, name='Sunder', salary=400000.0}, EmployeePayrollData{id=108, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=109, name='Anil', salary=600000.0}]
+'Duration without Thread: PT1.9814883S
+©[EmployeePayrollData{id=2, name='Charlie', salary=1000000.0}, EmployeePayrollData{id=3, name='Terisa', salary=3000000.0}, EmployeePayrollData{id=4, name='Bill', salary=3000000.0}, EmployeePayrollData{id=35, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=36, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=37, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=38, name='Sunder', salary=400000.0}, EmployeePayrollData{id=39, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=40, name='Anil', salary=600000.0}, EmployeePayrollData{id=104, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=105, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=106, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=107, name='Sunder', salary=400000.0}, EmployeePayrollData{id=108, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=109, name='Anil', salary=600000.0}]
+$Duration with Thread: PT0.0029981S
