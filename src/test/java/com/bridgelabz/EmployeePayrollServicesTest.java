@@ -3,6 +3,8 @@ package com.bridgelabz;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
@@ -13,17 +15,17 @@ import static com.bridgelabz.EmployeePayrollService.IOService.DB_IO;
 public class EmployeePayrollServicesTest {
    @Test
    public  void given3EmployeeWhenWrittenToFileShouldMatchEmployeeEntries() {
-       EmployeePayrollData[] arrayOfEmps = {
-               new EmployeePayrollData(1, "Jeff Bezos", 100000.0),
-               new EmployeePayrollData(2, "Bill Gates", 20000.0),
-               new EmployeePayrollData(3, "Mark Zuckerberg", 30000.0)
+       EmployeePayrollData[] arrayOfEmps ={
+               new EmployeePayrollData(1,"Jeff Bezos",100000.0),
+               new EmployeePayrollData(2,"Bill Gates",200000.0),
+               new EmployeePayrollData(3,"Mark Zuckerberg",300000.0),
        };
        EmployeePayrollService employeePayrollService;
        employeePayrollService = new EmployeePayrollService(Arrays.asList(arrayOfEmps));
-       employeePayrollService.writeEmployeePayrollData(EmployeePayrollService.IOService.FILE_IO);
+       employeePayrollService.writeEmployeeData(EmployeePayrollService.IOService.FILE_IO);
        employeePayrollService.printData(EmployeePayrollService.IOService.FILE_IO);
        long entries = employeePayrollService.countEntries(EmployeePayrollService.IOService.FILE_IO);
-       Assert.assertEquals(3, entries);
+       Assert.assertEquals(3,entries);
    }
 
     @Test
@@ -45,13 +47,13 @@ public class EmployeePayrollServicesTest {
     }
 
     @Test
-    public void givenDateRange_WhenRetrievedEmployee_ShouldReturnEmpCount()  {
+    public void givenDataRange_WhenRetrieved_ShouldMatchEmployeeCount() {
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
-        employeePayrollService.readEmployeePayrollData(DB_IO);
-        LocalDate startDate = LocalDate.of(2018, 01, 01);
+        employeePayrollService.readEmployeePayrollData(EmployeePayrollService.IOService.DB_IO);
+        LocalDate startDate = LocalDate.of(2018,01,01);
         LocalDate endDate = LocalDate.now();
-        List<EmployeePayrollData> employeePayrollData = employeePayrollService.readEmployeePayrollDataForDateRange(DB_IO, startDate, endDate);
-        Assert.assertEquals(3, employeePayrollData.size());
+        List<EmployeePayrollData> employeePayrollData = employeePayrollService.readEmployeePayrollDataRange(EmployeePayrollService.IOService.DB_IO,startDate,endDate);
+        Assert.assertEquals(3,employeePayrollData.size());
     }
 
     @Test
@@ -64,11 +66,33 @@ public class EmployeePayrollServicesTest {
     }
 
     @Test
-    public void givenNewEmployee_WhenAdded_ShouldSyncWithDB() {
+    public void givenNewEmployee_WhenAdded_ShouldSyncWithDB()  {
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
         employeePayrollService.readEmployeePayrollData(DB_IO);
-        employeePayrollService.addEmployeeToPayroll("Mark", 5000000.00, LocalDate.now(), "M");
+        employeePayrollService.addEmployeeToPayroll("Mark", 5000000.00, LocalDate.now(), 'M');
         boolean result = employeePayrollService.checkEmployeePayrollInSyncWithDB("Mark");
         Assert.assertTrue(result);
     }
+
+
+    @Test
+    public void given6Employee_WhenAddedToDB_ShouldMatchEmployeeEntries() {
+        EmployeePayrollData[] arrayOfEmps = {
+                new EmployeePayrollData(0,"Jeff Bezos",'M',100000.00,LocalDate.now()),
+                new EmployeePayrollData(0,"Bill Gates",'M',200000.00,LocalDate.now()),
+                new EmployeePayrollData(0,"Mark Zuckerberg",'M',300000.00,LocalDate.now()),
+                new EmployeePayrollData(0,"Sunder",'M',400000.00,LocalDate.now()),
+                new EmployeePayrollData(0,"Mukesh",'M',500000.00,LocalDate.now()),
+                new EmployeePayrollData(0,"Anil",'M',600000.00,LocalDate.now())
+        };
+        EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+        employeePayrollService.readEmployeePayrollData(EmployeePayrollService.IOService.DB_IO);
+        Instant start = Instant.now();
+        employeePayrollService.addEmployeeToPayroll((Arrays.asList(arrayOfEmps)));
+        Instant end = Instant.now();
+        System.out.println("Duration without Thread: " + Duration.between(start, end));
+        Assert.assertEquals(7, employeePayrollService.countEntries(EmployeePayrollService.IOService.DB_IO));
+    }
+
+
 }
