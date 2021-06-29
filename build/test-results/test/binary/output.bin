@@ -1,8 +1,13 @@
-!EMPLOYEE PAYROLL IN JSONServer: 
+(EMPLOYEE PAYROLL ENTRIES IN JSONServer:
 [
   {
     "id": 1,
-    "name": "abcd",
-    "company": "bl"
+    "name": "Mark",
+    "salary": 10000
+  },
+  {
+    "id": 2,
+    "name": "Bill",
+    "salary": 20000
   }
 ]
