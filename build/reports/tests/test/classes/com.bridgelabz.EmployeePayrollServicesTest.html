@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.698s</div>
+<div class="counter">4.080s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,80 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="givenEmployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount"></a>
+<h3 class="failures">givenEmployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount</h3>
+<span class="code">
+<pre>java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;1&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.bridgelabz.EmployeePayrollServicesTest.givenEmployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount(EmployeePayrollServicesTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,45 +145,23 @@
 </tr>
 </thead>
 <tr>
-<td class="success">given6Employee_WhenAddedToDB_ShouldMatchEmployeeEntries</td>
-<td class="success">2.698s</td>
-<td class="success">passed</td>
+<td class="failures">givenEmployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount</td>
+<td class="failures">4.080s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Processing Thread: Test workerConnection to database with Id:1
-Processing Thread: Test worker Id: 1Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@5922656d
-Employee Being Added : Jeff Bezos
-Processing Thread: Test workerConnection to database with Id:2
-Processing Thread: Test worker Id: 2Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@14ee5cd4
-Employee Added: Jeff Bezos
-Employee Being Added : Bill Gates
-Processing Thread: Test workerConnection to database with Id:3
-Processing Thread: Test worker Id: 3Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@c4fe046
-Employee Added: Bill Gates
-Employee Being Added : Mark Zuckerberg
-Processing Thread: Test workerConnection to database with Id:4
-Processing Thread: Test worker Id: 4Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@103cd77f
-Employee Added: Mark Zuckerberg
-Employee Being Added : Sunder
-Processing Thread: Test workerConnection to database with Id:5
-Processing Thread: Test worker Id: 5Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@2c1e529a
-Employee Added: Sunder
-Employee Being Added : Mukesh
-Processing Thread: Test workerConnection to database with Id:6
-Processing Thread: Test worker Id: 6Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@4959d2c7
-Employee Added: Mukesh
-Employee Being Added : Anil
-Processing Thread: Test workerConnection to database with Id:7
-Processing Thread: Test worker Id: 7Connection is successful!!!!!!!!com.mysql.cj.jdbc.ConnectionImpl@963a03e
-Employee Added: Anil
-[EmployeePayrollData{id=2, name='Charlie', salary=1000000.0}, EmployeePayrollData{id=3, name='Terisa', salary=3000000.0}, EmployeePayrollData{id=4, name='Bill', salary=3000000.0}, EmployeePayrollData{id=35, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=36, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=37, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=38, name='Sunder', salary=400000.0}, EmployeePayrollData{id=39, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=40, name='Anil', salary=600000.0}, EmployeePayrollData{id=104, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=105, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=106, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=107, name='Sunder', salary=400000.0}, EmployeePayrollData{id=108, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=109, name='Anil', salary=600000.0}]
-Duration without Thread: PT1.9814883S
-[EmployeePayrollData{id=2, name='Charlie', salary=1000000.0}, EmployeePayrollData{id=3, name='Terisa', salary=3000000.0}, EmployeePayrollData{id=4, name='Bill', salary=3000000.0}, EmployeePayrollData{id=35, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=36, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=37, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=38, name='Sunder', salary=400000.0}, EmployeePayrollData{id=39, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=40, name='Anil', salary=600000.0}, EmployeePayrollData{id=104, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=105, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=106, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=107, name='Sunder', salary=400000.0}, EmployeePayrollData{id=108, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=109, name='Anil', salary=600000.0}]
-Duration with Thread: PT0.0029981S
+<pre>EMPLOYEE PAYROLL IN JSONServer: 
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;abcd&quot;,
+    &quot;company&quot;: &quot;bl&quot;
+  }
+]
 </pre>
 </span>
 </div>
@@ -128,7 +173,7 @@ Duration with Thread: PT0.0029981S
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at Jun 27, 2021, 11:49:33 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at Jun 29, 2021, 3:06:59 AM</p>
 </div>
 </div>
 </body>
