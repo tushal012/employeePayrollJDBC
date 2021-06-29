@@ -47,7 +47,7 @@
     "id": 6,
     "name": "Anil",
     "gender": "M",
-    "salary": 200000,
+    "salary": 300000,
     "startDate": {
       "year": 2021,
       "month": 6,

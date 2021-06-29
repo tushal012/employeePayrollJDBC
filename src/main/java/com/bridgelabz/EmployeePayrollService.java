@@ -74,6 +74,13 @@ public class EmployeePayrollService {
         if(employeePayrollData != null) employeePayrollData.salary = salary;
     }
 
+    public void deleteEmployeePayroll(String name, IOService ioService) {
+        if (ioService.equals(IOService.DB_IO)) {
+            EmployeePayrollData employeePayrollData = this.getEmployeePayrollData(name);
+            employeePayrollList.remove(employeePayrollData);
+        }
+    }
+
     public EmployeePayrollData getEmployeePayrollData(String name) {
         return this.employeePayrollList.stream()
                 .filter(employeePayrollDataItem -> employeePayrollDataItem.name.equals(name))

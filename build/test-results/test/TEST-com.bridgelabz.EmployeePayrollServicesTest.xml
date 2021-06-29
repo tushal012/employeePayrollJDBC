@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.EmployeePayrollServicesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-29T18:08:01" hostname="DESKTOP-T1B6V6K" time="19.344">
+<testsuite name="com.bridgelabz.EmployeePayrollServicesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-29T18:23:02" hostname="DESKTOP-T1B6V6K" time="8.243">
   <properties/>
-  <testcase name="givenNewSalaryForEmployee_WHenUpdated_ShouldMatch200Response" classname="com.bridgelabz.EmployeePayrollServicesTest" time="19.344"/>
+  <testcase name="givenEmployeeToDelete_WhenDeleted_ShouldMatch200ResponseAndCount" classname="com.bridgelabz.EmployeePayrollServicesTest" time="8.243"/>
   <system-out><![CDATA[EMPLOYEE PAYROLL ENTRIES IN JSONServer:
 [
   {
@@ -51,7 +51,7 @@
     "id": 6,
     "name": "Anil",
     "gender": "M",
-    "salary": 200000,
+    "salary": 300000,
     "startDate": {
       "year": 2021,
       "month": 6,
