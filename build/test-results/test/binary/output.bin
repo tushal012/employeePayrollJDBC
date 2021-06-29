@@ -9,5 +9,16 @@
     "id": 2,
     "name": "Bill",
     "salary": 20000
+  },
+  {
+    "id": 3,
+    "name": "Mark Zuckerberg",
+    "gender": "M",
+    "salary": 300000,
+    "startDate": {
+      "year": 2021,
+      "month": 6,
+      "day": 29
+    }
   }
 ]

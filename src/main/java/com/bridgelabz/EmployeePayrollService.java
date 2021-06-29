@@ -6,6 +6,7 @@ import java.util.*;
 
 public class EmployeePayrollService {
 
+
     public enum IOService {
         CONSOLE_IO, FILE_IO, DB_IO, REST_IO
     }
@@ -109,6 +110,13 @@ public class EmployeePayrollService {
         }
         System.out.println(this.employeePayrollList);
 
+    }
+
+    public void addEmployeeToPayroll(EmployeePayrollData employeePayrollData,IOService ioService){
+        if(ioService.equals(IOService.DB_IO))
+            this.addEmployeeToPayroll(employeePayrollData.name,employeePayrollData.salary,
+                    employeePayrollData.startDate, employeePayrollData.gender);
+        else employeePayrollList.add(employeePayrollData);
     }
 
 
